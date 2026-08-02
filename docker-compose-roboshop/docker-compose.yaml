@@ -1,0 +1,22 @@
+services:
+ frontend:
+  build: ./frontend
+  image: sateeshdukuntla/frontend:1.0.0
+  container_name: frontend
+  ports:
+  - "80:80"
+  depends_on:
+  - catalogue
+ catalogue:
+  build: ./catalogue
+  image: sateeshdukuntla/catalogue:1.0.0
+  container: catalogue
+  depends_on: 
+  - mongodb
+ mongodb:
+  build: ./mongodb
+  image: sateeshdukuntla/mongo:1.0.0
+  container: mongodb  
+
+
+    
