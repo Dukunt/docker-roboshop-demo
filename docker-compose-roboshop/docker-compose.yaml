@@ -10,13 +10,13 @@ services:
  catalogue:
   build: ./catalogue
   image: sateeshdukuntla/catalogue:1.0.0
-  container: catalogue
+  container_name: catalogue
   depends_on: 
   - mongodb
  mongodb:
   build: ./mongodb
   image: sateeshdukuntla/mongo:1.0.0
-  container: mongodb  
+  container_name: mongodb  
 
 
     
