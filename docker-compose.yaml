@@ -15,7 +15,7 @@ services:
   - mongodb
  mongodb:
   build: ./mongodb
-  image: sateeshdukuntla/mongo:1.0.0
+  image: sateeshdukuntla/mongodb:1.0.0
   container_name: mongodb  
 
 
