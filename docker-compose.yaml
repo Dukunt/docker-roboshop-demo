@@ -78,7 +78,7 @@ services:
     - rabbitmq
     - cart
     - user
- networks:
+networks:
   default:
     driver: bridge
     name: robo
